@@ -1,17 +1,44 @@
 # Map_Tracking
 
-Description:
+This project utilizes Mapbox GL JS to create an interactive map application that demonstrates moving a marker between predefined coordinates. The application showcases the journey from Sulur to Singanallur.
 
-This HTML document displays a map using Mapbox and a button to animate a marker's movement along predefined bus stops between Gandhipuram and Sulur.
+## Demo
+You can view a live demo of the project [here](#).  
+*(Replace the `#` with the URL to your hosted project, if available.)*
 
-How to run the code:
+## Features
 
-Step1:Save the HTML file with .html extension.
+- Interactive Map displaying the route between Sulur and Singanallur.
+- A marker that moves smoothly between predefined latitude and longitude coordinates.
+- Button to start the marker movement.
 
-Step2:Click the "Go Live" button.A new browser window will open, displaying map moving from one place to another place.
+## How It Works
 
-Future Enhancement:
+1. **Mapbox Setup**:
+   - The project uses the Mapbox GL JS library to display a map with street view.
 
-1.Display real-time bus location data on the map for a more practical application.
+2. **HTML Structure**:
+   - Contains a `div` element for the map and a button to initiate the marker movement.
 
-2.Add interactive features like bus stop information on click or route selection options.
+3. **JavaScript Functionality**:
+   - The Mapbox access token is set to access the map features.
+   - An array of latitude (`right`) and longitude (`left`) values represents the path.
+   - A button triggers the `btn` function, which starts the movement of the marker on the map.
+
+4. **Marker Movement**:
+   - The `move` function updates the marker's position on the map every second by cycling through the coordinates.
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/mapbox-marker-movement.git
+   cd eyeball-follower
+   open index.html
+## Customization
+You can change the background image by modifying the background-image URL in the CSS.
+The eyeball images can also be updated by changing the src attribute of the <img> tags in the HTML.
+Adjust the size and position of the eyes by modifying the CSS properties in the .eye and .eyeball classes.
